@@ -5,11 +5,9 @@ Requires at least: 2.8.0
 Tested up to: 3.0.1
 Stable tag: trunk
 
-== Description ==
-
 Probably the most advanced Accordion Menu on the web. Fully XML customizable, without using Flash. And it's free!
 
-= Main features =
+== Description ==
 
 You can place this Accordion Menu on any website for free without even using Flash. There is the possibility to have multiple levels menu with specified text orientation and alignment. There are roll over/out animation effects. The text is HTML/CSS formatted and you can embed any font. You can specify an action for each item. Many other customizable properties can be found using the Live Demo.
 
