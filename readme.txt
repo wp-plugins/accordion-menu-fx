@@ -5,7 +5,7 @@ Requires at least: 2.8.0
 Tested up to: 3.0.1
 Stable tag: trunk
 
-Probably the most advanced Accordion Menu on the web. Fully XML customizable, without using Flash. And it's free!
+Probably the most advanced Accordion Menu on the web. Fully XML customizable without any Flash knowledge. And it's free!
 
 == Description ==
 

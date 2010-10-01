@@ -2,7 +2,7 @@
 /*
 Plugin Name: Accordion Menu FX
 Plugin URI: http://www.flashxml.net/accordion-menu.html
-Description: Probably the most advanced Accordion Menu on the web. Fully XML customizable, without using Flash. And it's free!
+Description: Probably the most advanced Accordion Menu on the web. Fully XML customizable without any Flash knowledge. And it's free!
 Version: 0.2.3
 Author: FlashXML.net
 Author URI: http://www.flashxml.net/
@@ -36,20 +36,16 @@ License: GPL2
 				$height = (int)$data->General_Properties->componentHeight->attributes()->value;
 			}
 		} elseif ((int)$accordionmenufx_attributes[4] > 0 && (int)$accordionmenufx_attributes[6] > 0) {
-			$width = $accordionmenufx_attributes[4];
-			$height = $accordionmenufx_attributes[6];
+			$width = (int)$accordionmenufx_attributes[4];
+			$height = (int)$accordionmenufx_attributes[6];
 		} else {
 			return '<!-- invalid Accordion Menu FX width and / or height -->';
-		}
-
-		if ($width == 0 || $height == 0) {
-			return '';
 		}
 
 		$swf_embed = array(
 			'width' => $width,
 			'height' => $height,
-			'text' => trim($accordionmenufx_attributes[7]),
+			'text' => isset($accordionmenufx_attributes[7]) ? trim($accordionmenufx_attributes[7]) : '',
 			'component_path' => WP_CONTENT_URL . "/{$plugin_dir}/",
 			'swf_name' => 'accordionMenu.swf',
 		);
