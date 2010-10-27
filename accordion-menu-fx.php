@@ -3,7 +3,7 @@
 Plugin Name: Accordion Menu FX
 Plugin URI: http://www.flashxml.net/accordion-menu.html
 Description: Probably the most advanced Accordion Menu on the web. Fully XML customizable without any Flash knowledge. And it's free!
-Version: 0.2.6
+Version: 0.2.7
 Author: FlashXML.net
 Author URI: http://www.flashxml.net/
 License: GPL2
@@ -79,7 +79,7 @@ License: GPL2
 	}
 
 	function accordionmenufx_echo_embed_code($settings_xml_path = '', $div_text = '', $width = 0, $height = 0) {
-		echo accordionmenufx_get_embed_code(array(2 => $settings_xml_path, 3 => $div_text, 4 => $width, 6 => $height));
+		echo accordionmenufx_get_embed_code(array(2 => $settings_xml_path, 7 => $div_text, 4 => $width, 6 => $height));
 	}
 
 	function accordionmenufx_load_swfobject_lib() {
